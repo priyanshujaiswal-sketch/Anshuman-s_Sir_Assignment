@@ -7,5 +7,9 @@ The code in this file wil change the xml file in the json file. And the logic of
 Assignment 2: Notification_System (Backend: Node.JS + PostSQL)
 This folder is for notification_system. In this folder i haven't create any authentication, i took 10 items which are static data in database and a user can subscribe for particular model and get notified when the item will come in stock also i tested for this if the server would be killed in the mid of sending the notification even tough if we restart the server notification will be sended automatically. For this project i ahve used Node.JS + PostSQL.
 
+Steps : in terminal cd Notified_syetem
+                    npm i
+                    create .env and set up the requirement like postsql and port
+
 
 Assignment 3: Splitwise_System: (Backend: Node.JS + PostSQL)
