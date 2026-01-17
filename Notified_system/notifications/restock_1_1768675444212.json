@@ -1,0 +1,8 @@
+[
+  {
+    "userId": "test_user_crashing",
+    "channels": [
+      "EMAIL"
+    ]
+  }
+]
