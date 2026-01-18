@@ -3,7 +3,6 @@ const pool = require("../db/postgres");
 
 class SettlementService {
   async settlePayment(fromUser, toUser, amount) {
-    // 1️⃣ Check existing balance
     const result = await pool.query(
       `
       SELECT amount FROM balances
@@ -22,7 +21,6 @@ class SettlementService {
       throw new Error("Settlement amount exceeds balance");
     }
 
-    // 2️⃣ Reduce or delete balance
     if (amount === currentAmount) {
       await pool.query(
         `
@@ -42,7 +40,6 @@ class SettlementService {
       );
     }
 
-    // 3️⃣ Save settlement history
     await pool.query(
       `
       INSERT INTO settlements (id, from_user, to_user, amount)
