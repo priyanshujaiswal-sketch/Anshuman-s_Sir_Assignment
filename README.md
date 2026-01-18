@@ -13,3 +13,7 @@ Steps : in terminal cd Notified_syetem
 
 
 Assignment 3: Splitwise_System: (Backend: Node.JS + PostSQL)
+This repo has project to split the money between the groups via creating the group money can be distributed in the peoples of group and can be track also.
+steps: in terminal cd SplitMoneyApp
+                  npm i
+                  create .env file and et up the required options
